@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1656E725554A90002A4DFB /* CheckoutModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1656E625554A90002A4DFB /* CheckoutModal.swift */; };
+		1C8B96C02553EBBD00BDBED9 /* CheckoutWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8B96BF2553EBBD00BDBED9 /* CheckoutWebView.swift */; };
+		1C8B96C22553EBC600BDBED9 /* TheTellerCheckout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8B96C12553EBC600BDBED9 /* TheTellerCheckout.swift */; };
 		1CC862272553283F000AA43C /* TheTellerCheckout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC8621D2553283F000AA43C /* TheTellerCheckout.framework */; };
 		1CC8622C2553283F000AA43C /* TheTellerCheckoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC8622B2553283F000AA43C /* TheTellerCheckoutTests.swift */; };
 		1CC8622E2553283F000AA43C /* TheTellerCheckout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC862202553283F000AA43C /* TheTellerCheckout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C1656E625554A90002A4DFB /* CheckoutModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutModal.swift; sourceTree = "<group>"; };
+		1C8B96BF2553EBBD00BDBED9 /* CheckoutWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutWebView.swift; sourceTree = "<group>"; };
+		1C8B96C12553EBC600BDBED9 /* TheTellerCheckout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTellerCheckout.swift; sourceTree = "<group>"; };
 		1CC8621D2553283F000AA43C /* TheTellerCheckout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheTellerCheckout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC862202553283F000AA43C /* TheTellerCheckout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheTellerCheckout.h; sourceTree = "<group>"; };
 		1CC862212553283F000AA43C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,8 +77,11 @@
 		1CC8621F2553283F000AA43C /* TheTellerCheckout */ = {
 			isa = PBXGroup;
 			children = (
+				1C8B96C12553EBC600BDBED9 /* TheTellerCheckout.swift */,
+				1C8B96BF2553EBBD00BDBED9 /* CheckoutWebView.swift */,
 				1CC862202553283F000AA43C /* TheTellerCheckout.h */,
 				1CC862212553283F000AA43C /* Info.plist */,
+				1C1656E625554A90002A4DFB /* CheckoutModal.swift */,
 			);
 			path = TheTellerCheckout;
 			sourceTree = "<group>";
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					1CC8621C2553283F000AA43C = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					1CC862252553283F000AA43C = {
 						CreatedOnToolsVersion = 11.6;
@@ -195,6 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8B96C02553EBBD00BDBED9 /* CheckoutWebView.swift in Sources */,
+				1C1656E725554A90002A4DFB /* CheckoutModal.swift in Sources */,
+				1C8B96C22553EBC600BDBED9 /* TheTellerCheckout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		1CC862322553283F000AA43C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FMDN3627Q6;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.payswitch.TheTellerCheckout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		1CC862332553283F000AA43C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FMDN3627Q6;
@@ -388,6 +404,7 @@
 		1CC862352553283F000AA43C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FMDN3627Q6;
 				INFOPLIST_FILE = TheTellerCheckoutTests/Info.plist;
@@ -406,6 +423,7 @@
 		1CC862362553283F000AA43C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FMDN3627Q6;
 				INFOPLIST_FILE = TheTellerCheckoutTests/Info.plist;
