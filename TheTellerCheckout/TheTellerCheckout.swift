@@ -1,6 +1,5 @@
 import Foundation
 import UIKit
-import SafariServices
 
 public class TheTellerCheckout {
     var config: [String: Any]

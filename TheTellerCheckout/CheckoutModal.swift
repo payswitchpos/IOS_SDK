@@ -34,7 +34,7 @@ class PopupModal: UIView {
         let v = UIView()
         v.translatesAutoresizingMaskIntoConstraints = false
         v.backgroundColor = .white
-        v.layer.cornerRadius = 24
+        v.layer.cornerRadius = 5
         return v
     }()
     @objc fileprivate func animationIn(){
@@ -70,8 +70,8 @@ class PopupModal: UIView {
         self.addSubview(container)
         container.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         container.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        container.widthAnchor.constraint(equalTo: self.widthAnchor,multiplier: 0.85).isActive = true
-        container.heightAnchor.constraint(equalTo: self.heightAnchor,multiplier:  0.8).isActive = true
+        container.widthAnchor.constraint(equalTo: self.widthAnchor,multiplier: 1.0).isActive = true
+        container.heightAnchor.constraint(equalTo: self.heightAnchor,multiplier:  0.92).isActive = true
         container.addSubview(stack)
         stack.topAnchor.constraint(equalTo: container.topAnchor).isActive = true
         stack.leadingAnchor.constraint(equalTo: container.leadingAnchor).isActive = true

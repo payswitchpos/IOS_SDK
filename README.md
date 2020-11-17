@@ -7,6 +7,11 @@ A Framework for calling TheTellerCheckout built on swift for IOS.
 - Add the the blug in to your project
     Right-click on the root of your project node in the project navigator. Click Add Files to “YOURPROJECTNAME”. In the file chooser, navigate to and select TheTellerCheckout.xcodeproj. Click Add to add TheTellerCheckout.xcodeproj as a sub-project.
 
+     - Click on the root of your project node in the project navigator 
+     - Click the KnobShowcase target, and then go to the General tab.
+     - Scroll down to the Frameworks, Libraries, and Embedded Content section. Drag TheTellerCheckout.framework from the Products folder of TheTellerCheckout.xcodeproj onto this section.
+    
+
 Usage:
 - import TheTellerCheckout
     ```swift
