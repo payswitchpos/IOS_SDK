@@ -35,7 +35,7 @@ public class TheTellerCheckout {
                             self.showView(url: checkout_url, handleDone: callback)
                         }
                         else {
-                            self.showView(url: "https://mgm-bet.com", handleDone: callback)
+                            self.showView(url: "", handleDone: callback)
                         }
                         }
                         
