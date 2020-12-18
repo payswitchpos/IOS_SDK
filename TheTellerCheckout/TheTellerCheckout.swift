@@ -35,7 +35,7 @@ public class TheTellerCheckout {
                             self.showView(url: checkout_url, handleDone: callback)
                         }
                         else {
-                            self.showView(url: "", handleDone: callback)
+                            closure?(json, error)
                         }
                         }
                         
@@ -45,7 +45,6 @@ public class TheTellerCheckout {
                         
                         if let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                             complete(json, error)
-                           
                              return
                         }
                         }

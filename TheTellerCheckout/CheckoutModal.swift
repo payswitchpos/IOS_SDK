@@ -46,9 +46,9 @@ class PopupModal: UIView {
         })
     }
     public func handleDone(url: String){
-        let reason = getQueryStringParameter(url: url,param: "status")
+        let reason = getQueryStringParameter(url: url,param: "reason")
         let code = getQueryStringParameter(url: url,param: "code")
-        let status = getQueryStringParameter(url: url,param: "code")
+        let status = getQueryStringParameter(url: url,param: "status")
         let transaction_id = getQueryStringParameter(url: url,param: "transaction_id")
         let  data: [String: Any] = ["status":status!,"reason":reason!,"code":code!, "transaction_id": transaction_id!]
         self.finish!(data,nil)
